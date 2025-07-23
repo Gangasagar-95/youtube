@@ -230,11 +230,7 @@ class Shorts extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              SnackBar(
-                                content: Text(
-                                  "Subscribed 👍 \n jujutsu Kaisen ",
-                                ),
-                              );
+                              Get.snackbar("Subscribed✨ ", "Anime World",);
                               ytcontrollerobj.subscribebutton();
                             },
                             child: Text(

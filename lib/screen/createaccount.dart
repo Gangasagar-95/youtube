@@ -1,19 +1,12 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/routes/app_routes.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-// import 'package:flutter_application_2/screen/loginscreen.dart';
-// import 'package:flutter_application_2/screen/tabs.dart';
 
-class Createaccount extends StatefulWidget {
-  const Createaccount({super.key});
 
-  @override
-  State<Createaccount> createState() => _CreateaccountState();
-}
+class Createaccount extends StatelessWidget {
 
-class _CreateaccountState extends State<Createaccount> {
-  final _formkey = GlobalKey<FormState>();
+ final _formkey = GlobalKey<FormState>();
   TextEditingController emailCtr = TextEditingController();
   TextEditingController usernameCtr = TextEditingController();
   TextEditingController passwordCtr = TextEditingController();
@@ -23,6 +16,8 @@ class _CreateaccountState extends State<Createaccount> {
       Get.offNamed(Approutes.tabs);
     }
   }
+
+   Createaccount({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -182,7 +177,7 @@ class _CreateaccountState extends State<Createaccount> {
                 SizedBox(height: 15),
                 TextButton(
                   onPressed: () {
-                    Get.offNamed(Approutes.forgetpassword);
+                    Get.toNamed(Approutes.loginScreen);
                   },
                   child: Text(
                     "Back to Login",

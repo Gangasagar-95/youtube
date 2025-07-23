@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp( debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
-        "/": (context) =>Tabs(),
+        "/": (context) =>Loginscreen(),
          "/login_Screen" : (context) => Loginscreen(),
         "/create_account" :  (context) => Createaccount(),
         "/forget_password": (context) => Forgetpassscreen(),
