@@ -7,9 +7,9 @@ import 'package:get/get.dart';
 class Createaccount extends StatelessWidget {
 
  final _formkey = GlobalKey<FormState>();
-  TextEditingController emailCtr = TextEditingController();
-  TextEditingController usernameCtr = TextEditingController();
-  TextEditingController passwordCtr = TextEditingController();
+ final TextEditingController emailCtr = TextEditingController();
+ final TextEditingController usernameCtr = TextEditingController();
+ final TextEditingController passwordCtr = TextEditingController();
 
   void login() {
     if (_formkey.currentState!.validate()) {
