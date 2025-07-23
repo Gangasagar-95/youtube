@@ -213,7 +213,7 @@ class Youtube extends StatelessWidget {
               SizedBox(width: 10),
               GestureDetector(
                 onTap: () {
-                  Get.offNamed(Approutes.notification);
+                  Get.toNamed(Approutes.notification);
              //   Navigator.pushNamed(context, Approutes.notification);
                 },
                 child: Icon(Icons.notifications, size: 25, color: Colors.white),
@@ -229,15 +229,15 @@ class Youtube extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 10),
-            // GestureDetector(
-            //   onTap: () {
-            //     Get.toNamed(Approutes.ytvideo);
-            //   },
-               ytcontainer(
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(Approutes.ytvideo);
+              },
+              child: ytcontainer(
                 networkimage:
                     "https://s.yimg.com/ny/api/res/1.2/Kev_O4ldRkhgBY3QgVae.g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2021-05/4fcfcfa0-ba19-11eb-bbbd-7255e078e53d",
               ),
-          //  ),
+            ),
             SizedBox(height: 10),
 
             Row(

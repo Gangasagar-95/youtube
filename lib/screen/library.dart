@@ -805,7 +805,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/customwidget/library_container.dart';
 import 'package:flutter_application_2/routes/app_routes.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
+
 
 class Library extends StatelessWidget {
   const Library({super.key});
@@ -841,12 +841,12 @@ class Library extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                    height: 100,
-                    width: 100,
+                    height: 90,
+                    width: 90,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: AssetImage("assets/images/narutosasuke.png"),
+                        image: AssetImage("assets/images/gojo (1).jpeg"),
                         fit: BoxFit.fill,
                       ),
                     ),

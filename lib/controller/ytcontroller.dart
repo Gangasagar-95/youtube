@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 class youtubecontroller extends GetxController {
   RxString name = "Subscribe".obs;
 
-  void Ebutton() {
+  void subscribebutton() {
      if (name.value == "Subscribe") {
       name.value = "Subscribed! 🔔";
     } else {
