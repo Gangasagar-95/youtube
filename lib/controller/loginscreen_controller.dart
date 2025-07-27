@@ -15,14 +15,5 @@ class LoginscreenController extends GetxController {
 
 
 
-  //  eye != eye;
-  //                     if (eye == true) {
-  //                       setState(() {
-  //                         eye = false;
-  //                       });
-  //                     } else {
-  //                       setState(() {
-  //                         eye = true;
-  //                       });
-  //                     }
-  //                   },
+ 
+ 

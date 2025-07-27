@@ -139,16 +139,17 @@ class YoutubeVideo extends StatelessWidget {
                             child: Row(
                               children: [
                                 IconButton(
-                                  onPressed: () {
-                                    LikeControllerobj.likebutton();
-                                  },
+                                  onPressed: 
+                                    LikeControllerobj.likebutton
+                                  ,
                                   icon: Icon(
-                                    LikeControllerobj.isliked.value == true
-                                        ? Icons.thumb_up_alt_outlined
-                                        : Icons.thumb_up,
+                                    LikeControllerobj.isliked.value
+                                        ? Icons.thumb_up 
+                                        :Icons.thumb_up_alt_outlined,
+                                       
                                     size: 15,
                                     color:
-                                        LikeControllerobj.isliked.value == true
+                                        LikeControllerobj.isliked.value
                                         ? Colors.white
                                         : Colors.white,
                                   ),
@@ -162,16 +163,16 @@ class YoutubeVideo extends StatelessWidget {
                                   ),
                                 ),
                                 IconButton(
-                                  onPressed: () {
-                                    LikeControllerobj.dilikedbutton();
-                                  },
+                                  onPressed: 
+                                    LikeControllerobj.dilikedbutton
+                                  ,
                                   icon: Icon(
-                                    LikeControllerobj.diliked.value == true
-                                        ? Icons.thumb_down_alt_outlined
-                                        : Icons.thumb_down,
+                                    LikeControllerobj.diliked.value 
+                                        ? Icons.thumb_down
+                                        :  Icons.thumb_down_alt_outlined,
                                     size: 15,
                                     color:
-                                        LikeControllerobj.diliked.value == true
+                                        LikeControllerobj.diliked.value 
                                         ? Colors.white
                                         : Colors.white,
                                   ),
@@ -188,6 +189,7 @@ class YoutubeVideo extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(70),
                                 color: Colors.grey,
                               ),
+
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [

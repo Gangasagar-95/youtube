@@ -1,4 +1,4 @@
-//
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Color/Appcolor.dart';
 import 'package:flutter_application_2/customwidget/customcontainer.dart';
@@ -8,13 +8,14 @@ import 'package:flutter_application_2/customwidget/shortscontainer.dart';
 import 'package:flutter_application_2/customwidget/subscriptionPcontainer.dart';
 import 'package:flutter_application_2/routes/app_routes.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
+
 
 class Subscription extends StatelessWidget {
   const Subscription({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       backgroundColor: Appcolor.bgcolor,
       appBar: AppBar(
@@ -210,7 +211,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -220,7 +221,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -233,7 +234,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -246,7 +247,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -259,7 +260,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -272,7 +273,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -285,7 +286,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -298,7 +299,7 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
@@ -311,13 +312,13 @@ class Subscription extends StatelessWidget {
                     ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.all(
-                          Appcolor.bgcolor,
+                          Appcolor.subtitlecolor,
                         ),
                       ),
                       onPressed: () {},
                       child: Text(
                         "Setting",
-                        style: TextStyle(color: Colors.blue),
+                        style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
                   ],
@@ -330,6 +331,7 @@ class Subscription extends StatelessWidget {
                 ytcontainer(
                   networkimage:
                       "https://assets.bandwagon.asia/system/tinymce/image/file/5372/content_BTS_PTD_ON_STAGE_CONCERT_7.jpg",
+                     
                 ),
                 SizedBox(height: 10),
 
@@ -441,6 +443,7 @@ class Subscription extends StatelessWidget {
                     ytcontainer(
                       networkimage:
                           "https://lh3.googleusercontent.com/FFTDpjDAW8f3XAnc5L-RctRtbjEkydDRM1fk8F949QxBcYo8FDBclpXY7JVxkwrXwRVBYBz0uLT9EqY8P1FIrVepRgmrvPWsfH8N6M5fIcg6C-RA=nu-e365-rj-q80",
+                         
                     ),
                     SizedBox(height: 10),
 

@@ -16,9 +16,10 @@ class PContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Container(
-      height: height,
-      width: width,
+      height:height,
+      width:width ,
       decoration: BoxDecoration(
         color: bgcolor,
         shape: BoxShape.circle,

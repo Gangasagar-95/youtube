@@ -24,22 +24,24 @@
 import 'package:get/get.dart';
 
 class LikeController extends GetxController {
-  RxBool isliked = true.obs;
-  RxBool diliked = true.obs;
+  RxBool isliked = false.obs;
+  RxBool diliked = false.obs;
 
   void likebutton() {
-    if (isliked.value == true) {
+    if (isliked.value) {
       isliked.value = false;
     } else {
       isliked.value = true;
+      diliked.value = false;
     }
   }
 
   void dilikedbutton() {
-     if (diliked.value == true) {
+    if (diliked.value) {
       diliked.value = false;
     } else {
       diliked.value = true;
+      isliked.value = false;
     }
   }
 }
