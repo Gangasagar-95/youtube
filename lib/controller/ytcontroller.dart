@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 class youtubecontroller extends GetxController {
   RxString name = "Subscribe".obs;
+  
+  
 
   void subscribebutton() {
      if (name.value == "Subscribe") {
@@ -12,6 +14,7 @@ class youtubecontroller extends GetxController {
     }
   }
 }
+
 
 
 

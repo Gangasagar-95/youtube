@@ -3,6 +3,7 @@ import 'package:flutter_application_2/screen/createaccount.dart';
 import 'package:flutter_application_2/screen/forgetpassscreen.dart';
 import 'package:flutter_application_2/screen/library.dart';
 import 'package:flutter_application_2/screen/loginscreen.dart';
+import 'package:flutter_application_2/screen/news_screen.dart';
 
 import 'package:flutter_application_2/screen/notification.dart';
 import 'package:flutter_application_2/screen/shorts.dart';
@@ -10,6 +11,7 @@ import 'package:flutter_application_2/screen/subscription.dart';
 import 'package:flutter_application_2/screen/tabs.dart';
 import 'package:flutter_application_2/screen/youtube_video.dart';
 import 'package:get/route_manager.dart';
+
 
 
 
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp( debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
-        "/": (context) =>Tabs(),
+        "/": (context) =>NewsScreen(),
          "/login_Screen" : (context) => Loginscreen(),
         "/create_account" :  (context) => Createaccount(),
         "/forget_password": (context) => Forgetpassscreen(),
@@ -43,6 +45,7 @@ class MyApp extends StatelessWidget {
 
   }
 }
+
 
 
 
