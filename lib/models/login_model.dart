@@ -29,7 +29,7 @@ class User {
   String? email;
   String? role;
   String? contact;
-  Null? address;
+  String? address;
   Null? gender;
   String? createdAt;
   String? updatedAt;

@@ -3,7 +3,8 @@ import 'package:flutter_application_2/screen/createaccount.dart';
 import 'package:flutter_application_2/screen/forgetpassscreen.dart';
 import 'package:flutter_application_2/screen/library.dart';
 import 'package:flutter_application_2/screen/loginscreen.dart';
-import 'package:flutter_application_2/screen/news_screen.dart';
+import 'package:flutter_application_2/screen/new_widget.dart';
+
 
 import 'package:flutter_application_2/screen/notification.dart';
 import 'package:flutter_application_2/screen/shorts.dart';
@@ -11,26 +12,30 @@ import 'package:flutter_application_2/screen/subscription.dart';
 import 'package:flutter_application_2/screen/tabs.dart';
 import 'package:flutter_application_2/screen/youtube_video.dart';
 import 'package:get/route_manager.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
+   void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  String? token = prefs.getString('token');
+  runApp(MyApp(token: token));
 
-
-   void main() {
-  runApp(const MyApp());
+  print("token in main.dart:$token");
 }
 
 class MyApp extends StatelessWidget {
-
-  const MyApp({super.key});
-
-
+    final String? token;
+  const MyApp({super.key, required this.token});
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp( debugShowCheckedModeBanner: false,
-      initialRoute: "/",
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',//token == null ? 'dummyscreen' : '/Tab_screen',
+
       routes: {
-        "/": (context) =>NewsScreen(),
+        "/": (context) =>dummyscreen(),
          "/login_Screen" : (context) => Loginscreen(),
         "/create_account" :  (context) => Createaccount(),
         "/forget_password": (context) => Forgetpassscreen(),
